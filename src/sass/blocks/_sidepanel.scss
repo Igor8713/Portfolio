@@ -1,0 +1,78 @@
+$sidepanel_width: 305px;
+$sidepanel_top: 247px;
+$sidepanel_left: 50px;
+
+/* .sidepanel{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: $sidepanel_width;
+    position: fixed;
+    top: $sidepanel_top;
+    left: $sidepanel_left;
+    z-index: 1;
+    &__text{
+        width: 25px;
+        height: 150px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        span{
+            display: block;
+            transform: rotate(-90deg) translate(-41%, -250%);
+            width: 150px;
+            height: 25px;
+        }
+    }
+    &__divider{
+        width: 2px;
+        height: 70px;
+        background-color: #fff;
+    }
+    &__link{
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        span{
+            display: block;
+            transform: rotate(-90deg);
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+}  */
+
+.sidepanel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $sidepanel_width;
+    position: fixed;
+    top: calc($sidepanel_top + $sidepanel_width / 2 - 30px / 2);       /*top(220px(figma)) + width(320px(figma))/2 - height(30px(site))/2*/
+    left: calc($sidepanel_left - $sidepanel_width / 2 + 30px / 2);      /*left(50px(figma)) - width(320px(figma))/2 + height(30px(site))/2*/
+    z-index: 1;
+    transform: rotate(-90deg);
+    &__text{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__divider{
+        width: 70px;
+        height: 2px;
+        background-color: #fff;
+    }
+    &__link{
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        span{
+            vertical-align: middle;
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+} 
