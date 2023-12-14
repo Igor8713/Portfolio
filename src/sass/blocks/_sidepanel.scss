@@ -2,6 +2,7 @@ $sidepanel_width: 305px;
 $sidepanel_top: 247px;
 $sidepanel_left: 50px;
 
+//sidepanel 1
 /* .sidepanel{
     display: flex;
     flex-direction: column-reverse;
@@ -44,6 +45,7 @@ $sidepanel_left: 50px;
     }
 }  */
 
+//sidepanel 2 
 .sidepanel{
     display: flex;
     justify-content: space-between;
@@ -72,7 +74,7 @@ $sidepanel_left: 50px;
             vertical-align: middle;
         }
         &:hover{
-            color: #fff;
+            color: $red_color;
         }
     }
 } 
