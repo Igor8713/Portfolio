@@ -1,4 +1,4 @@
-@mixin red_circle{
+@mixin circle{
     &::before{
         content: '';
         width: 36px;
@@ -8,6 +8,6 @@
         top: -6px;
         left: 0;
         z-index: -1;
-        background-color: $red_color;
+        background-color: $main_color;
     }
 }
