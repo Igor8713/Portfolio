@@ -1,5 +1,5 @@
 @mixin circle{
-    &::before{
+    &:before{
         content: '';
         width: 36px;
         height: 36px;
@@ -8,6 +8,20 @@
         top: -6px;
         left: 0;
         z-index: -1;
+        background-color: $main_color;
+    }
+}
+
+@mixin small_circle{
+    &:before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
         background-color: $main_color;
     }
 }

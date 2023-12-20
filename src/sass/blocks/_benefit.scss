@@ -1,0 +1,83 @@
+.benefit{
+    padding-top: 126px;
+    &__title{
+        text-align: center;
+        position: relative;
+        @include circle;
+        &:before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        .resume{
+            width: 425px;
+            margin-top: 60px;
+            &__title{
+                padding-left: 50px;
+                position: relative;
+                @include small_circle;
+                &:before{
+                    z-index: 2;
+                }
+            }
+            &__item{
+                list-style-type: none;
+                padding-top: 45px;
+                padding-left: 50px;
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 15px);
+                    position: absolute;
+                    top: -15px;
+                    left: 7px;
+                    z-index: 1;
+                    background-color: #000;
+                }
+                &:after{
+                    content: '';
+                    width: 43px;
+                    height: 1px;
+                    position: absolute;
+                    top: 63px;
+                    left: 7px;
+                    background-color: #000;
+                }
+                &Head{
+                    display: flex;
+                }
+                &Icon{
+                    padding-top: 14px;
+                    padding-left: 17px;
+                    margin-right: 18px;
+                    position: relative;
+                    @include circle;
+                    &:before{
+                        top: 0;
+                    }
+                }
+                &Location{
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+                &Body{
+                    margin-top: 12px;
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
