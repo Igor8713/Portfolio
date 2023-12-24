@@ -1,18 +1,5 @@
 .benefit{
     padding-top: 126px;
-    &__title{
-        text-align: center;
-        position: relative;
-        @include circle;
-        &:before{
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle{
-        margin-top: 6px;
-        text-align: center;
-    }
     &__wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

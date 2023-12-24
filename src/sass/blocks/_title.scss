@@ -20,4 +20,17 @@
     &_white{
         color: #fff;
     }
+    &__sectionTitle{
+        text-align: center;
+        position: relative;
+        @include circle;
+        &:before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__sectionSubtitle{
+        margin-top: 6px;
+        text-align: center;
+    }
 }
