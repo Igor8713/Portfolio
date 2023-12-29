@@ -52,8 +52,8 @@
         <!-- sidepanel 2 -->
         <div class="sidepanel__text">Социальные сети</div>
         <div class="sidepanel__divider"></div>
-        <a href="#" class="sidepanel__link"><span class="icon-github"></span></a>
-        <a href="#" class="sidepanel__link"><span class="icon-telegram"></span></a>
+        <a href="https://github.com/Igor8713" class="sidepanel__link"><span class="icon-github"></span></a>
+        <a href="https://t.me/igor0247" class="sidepanel__link"><span class="icon-telegram"></span></a>
     </aside>
     <div class="menu">
         <div class="menu__block">
@@ -64,17 +64,17 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#aboutMe">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
-                <a href="#"><span class="icon-github"></span></a>
-                <a href="#"><span class="icon-telegram"></span></a>
+                <a href="https://github.com/Igor8713"><span class="icon-github"></span></a>
+                <a href="https://t.me/igor0247"><span class="icon-telegram"></span></a>
             </div>
         </div>
         <div class="menu__overlay"></div>
@@ -84,8 +84,8 @@
             <div class="title title_fs16 title_white promo__subtitle">Меня зовут Игорь Литвиненко</div>
             <h1 class="title title_fs48 title_white promo__title">Я web-разработчик из города Кременчуг</h1>
             <div class="promo__buttons">
-                <a href="#" class="promo__link button">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link button">Портфолио</a>
+                <a href="#aboutMe" class="promo__link">Про меня</a>
             </div>
         </div>
         <div class="hamburger">
@@ -94,7 +94,7 @@
             <span></span>
         </div>
     </section>
-    <section class="aboutMe">
+    <section class="aboutMe" id="aboutMe">
         <div class="container">
             <div class="aboutMe__wrapper">
                 <div class="aboutMe__photo"><img src="img/photo-space.png" alt="photo"></div>
@@ -130,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="benefit">
+    <section class="benefit" id="resume">
         <div class="container">
             <h2 class="title title_fs16 title__sectionTitle">Опыт</h2>
             <div class="title title_fs36 title__sectionSubtitle">Чем я буду полезен</div>
@@ -189,7 +189,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fs16 title__sectionTitle">Навыки</h2>
             <div class="title title_fs36 title__sectionSubtitle">Что я использую в работе</div>
@@ -297,7 +297,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fs16 title__sectionTitle">Портфолио</h2>
             <div class="title title_fs36 title__sectionSubtitle">Мои работы</div>
@@ -308,7 +308,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fs16 title__sectionTitle">Прайс-лист</h2>
             <div class="line"></div>
@@ -326,6 +326,40 @@
                         <div class="price__cost">от 3000 грн.</div>
                     </div>
                     <div class="price__desc">Верстка многостраничного сайта для вашего бизнеса, компании и т. д.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo"><img src="img/photo-space.png" alt="photo"></div>
+                <div class="contacts__desc">
+                    <h2 class="title title_fs16 contacts__title">Контакты</h2>
+                    <div class="title title_fs36 contacts__subtitle">Свяжитесь со мной</div>
+                    <div class="line"></div>
+                    <div class="title contacts__text">По ссылке ниже:</div>
+                    <div class="contacts__links">
+                        <a href="https://t.me/igor0247" class="contacts__link"><span class="icon-telegram"></span></a>
+                    </div>
+                    <div class="title contacts__text">Или оставьте ваши данные и я вам напишу:</div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__inputs">
+                            <div class="contacts__name">
+                                <input type="text" id="name" name="name">
+                                <label for="name">Ваше имя</label>
+                            </div>
+                            <div class="contacts__email">
+                                <input type="email" id="email" name="email">
+                                <label for="email">Ваша почта</label>
+                            </div>
+                        </div>
+                        <div class="contacts__message">
+                            <textarea name="message" id="message"></textarea>
+                            <label for="message">Ваше сообщение</label>
+                        </div>
+                        <button class="button contacts__button">Отправить сообщение</button>
+                    </form>
                 </div>
             </div>
         </div>

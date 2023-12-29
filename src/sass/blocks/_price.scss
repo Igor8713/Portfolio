@@ -5,17 +5,15 @@
     }
     &__wrapper{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 366px);
         row-gap: 15px;
+        justify-content: space-between;
         padding: 0 50px;
         margin-top: 60px;
     }
     &__item{
         width: 366px;
         padding-left: 25px;
-        &:nth-child(even){
-            justify-self: end;
-        }
     }
     &__head{
         display: flex;
