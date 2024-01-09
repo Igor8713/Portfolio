@@ -90,11 +90,44 @@
             resize: none;
         }
     }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        position: relative;
+        input{
+            margin-left: 35px;
+        }
+    }
     &__button{
         border: 0px solid #000;
-        margin-top: 28px;
         color: #000;
         font-size: 14px;
         font-weight: 700;
+    }
+    &__policy{
+        margin-left: 10px;
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        a{
+            color: #2306D6;
+            text-decoration: none;
+            &:hover{
+                color: #2306D6;
+            }
+        }
+    }
+    .form__errorInput{
+        border: 1px solid rgb(184, 17, 17);
+    }
+    .form__errorMessage, .policy__errorMessage{
+        position: absolute;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .policy__errorMessage{
+        top: 30px;
+        left: 245px
     }
 }

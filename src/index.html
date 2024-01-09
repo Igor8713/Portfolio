@@ -43,6 +43,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/just_validate.min.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -346,19 +347,23 @@
                     <form action="#" class="contacts__form">
                         <div class="contacts__inputs">
                             <div class="contacts__name">
-                                <input type="text" id="name" name="name">
+                                <input type="text" id="name" name="name" class="inputField">
                                 <label for="name">Ваше имя</label>
                             </div>
                             <div class="contacts__email">
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" class="inputField">
                                 <label for="email">Ваша почта</label>
                             </div>
                         </div>
                         <div class="contacts__message">
-                            <textarea name="message" id="message"></textarea>
+                            <textarea name="message" id="message" class="inputField"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <button class="button contacts__button">Отправить сообщение</button>
+                        <div class="contacts__bottom">
+                            <button class="button contacts__button">Отправить сообщение</button>
+                            <input type="checkbox" id="policy">
+                            <label for="policy" class="contacts__policy">Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
+                        </div>
                     </form>
                 </div>
             </div>

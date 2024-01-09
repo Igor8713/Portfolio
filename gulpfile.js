@@ -35,6 +35,7 @@ gulp.task('watch', function() {
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
+    gulp.watch('src/mailer/**/*').on('change', gulp.parallel('mailer'));
 })
 
 gulp.task('html', function(){
@@ -68,4 +69,10 @@ gulp.task('images', function(){
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'images'));
+gulp.task('mailer', function(){
+    return gulp.src('src/mailer/**/*')
+        .pipe(gulp.dest('dist/mailer'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'images', 'mailer'));
