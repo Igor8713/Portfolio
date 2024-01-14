@@ -1,0 +1,204 @@
+@media(max-width: 1350px){
+    .sidepanel{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .aboutMe{
+        &__wrapper{
+            grid-template-columns: 400px 1fr;
+            gap: 40px;
+        }
+        &__skills{
+            gap: 20px 25px;
+            &Item{
+                column-gap: 15px;
+            }
+        }
+    }
+    .benefit{
+        &__wrapper{
+            padding: 0;
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(3, 270px);
+        }
+        &__progress{
+            grid-template-columns: repeat(2, 350px);
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .title{
+        &_fs36{
+            line-height: 45px;
+        }
+    }
+    .aboutMe{
+        &__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__skills{
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(90px, auto);
+            grid-auto-rows: minmax(90px, auto);
+            gap: 20px normal;
+        }
+    }
+    .benefit{
+        &__wrapper{
+            .resume{
+                width: 300px;
+            }
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(2, 270px);
+        }
+        &__progress{
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .title{
+        &_fs48{
+            font-size: 35px;
+            line-height: 48px;
+        }
+    }
+    .aboutMe{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: 340px repeat(2, auto);
+            gap: 40px normal;
+        }
+        &__photo{
+            grid-row: auto;
+        }
+        &__skills{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: minmax(120px, auto);
+            grid-auto-rows: minmax(120px, auto);
+            gap: 20px 25px;
+        }
+    }
+    .benefit{
+        padding-top: 46px;
+        &__wrapper{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .resume{
+                width: 425px;
+            }
+        }
+    }
+    .skills{
+        padding-top: 46px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 260px);
+        }
+        &__progress{
+            grid-template-columns: 350px;
+            gap: 48px normal;
+            margin-top: 48px;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        max-width: none;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .title{
+        &_fs48{
+            font-size: 26px;
+            line-height: normal;
+        }
+        &_fs36{
+            font-size: 24px;
+            line-height: normal;
+        }
+        &__sectionSubtitle{
+            margin-top: 26px;
+        }
+    }
+    .line{
+        margin: 15px auto 0 auto;
+    }
+    .promo{
+        .hamburger{
+            right: 20px;
+        }
+    }
+    .menu{
+        &__block{
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .aboutMe{
+        &__wrapper{
+            gap: 33px normal;
+        }
+        &__subtitle{
+            margin-top: 26px;
+        }
+        .line{
+            margin-top: 15px;
+        }
+        &__skills{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-rows: auto;
+            gap: 20px normal;
+            &Item{
+                column-gap: 20px;
+            }
+        }
+    }
+    .benefit{
+        &__wrapper{
+            .resume{
+                width: 100%;
+                max-width: 300px;
+                margin-top: 40px;
+                &__item{
+                    padding-top: 10px;
+                    &:first-child{
+                        padding-top: 45px;
+                    }
+                }
+            }
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: minmax(auto, 270px);
+            gap: 20px normal;
+            margin-top: 20px;
+        }
+        &__progress{
+            grid-template-columns: minmax(auto, 300px);
+        }
+    }
+}

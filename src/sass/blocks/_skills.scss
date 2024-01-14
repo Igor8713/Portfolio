@@ -1,17 +1,17 @@
 .skills{
     padding-top: 126px;
+    background-color: #212121;
     &__wrapper{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 13px;
-        justify-items: center;
+        grid-template-columns: repeat(4, 270px);
+        gap: 13px;
+        justify-content: center;
         margin-top: 60px;
     }
     &__item{
-        width: 270px;
         min-height: 270px;
         padding: 30px 30px 25px 30px;
-        border: 1px solid #000;
+        border: 1px solid #fff;
     }
     &__icon{
         display: flex;
@@ -22,15 +22,16 @@
     }
     &__desc{
         margin-top: 15px;
-        color: #000;
+        color: #fff;
         font-size: 12px;
         font-weight: 500;
         line-height: normal;
     }
     &__progress{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 350px);
         gap: 38px 45px;
+        justify-content: center;
         margin-top: 128px;
         &Head{
             display: flex;
@@ -45,7 +46,7 @@
             }
         }
         &Perc{
-            color: #000;
+            color: #fff;
             font-size: 14px;
             font-weight: 500;
         }

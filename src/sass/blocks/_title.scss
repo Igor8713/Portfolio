@@ -1,5 +1,5 @@
 .title{
-    color: #000;
+    color: #fff;
     font-weight: 700;
     font-size: 14px;
     line-height: normal;
@@ -17,12 +17,13 @@
         font-size: 48px;
         line-height: 60px;
     }
-    &_white{
-        color: #fff;
+    &_black{
+        color: #000;
     }
     &__sectionTitle{
         text-align: center;
         position: relative;
+        z-index: 1;
         @include circle;
         &:before{
             left: 50%;

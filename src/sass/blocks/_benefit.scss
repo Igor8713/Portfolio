@@ -1,9 +1,10 @@
 .benefit{
     padding-top: 126px;
+    background-color: #212121;
     &__wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 89px 0 65px;
         .resume{
             width: 425px;
             margin-top: 60px;
@@ -28,38 +29,40 @@
                     top: -15px;
                     left: 7px;
                     z-index: 1;
-                    background-color: #000;
-                }
-                &:after{
-                    content: '';
-                    width: 43px;
-                    height: 1px;
-                    position: absolute;
-                    top: 63px;
-                    left: 7px;
-                    background-color: #000;
+                    background-color: #fff;
                 }
                 &Head{
                     display: flex;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        width: 43px;
+                        height: 1px;
+                        position: absolute;
+                        top: 18px;
+                        left: -43px;
+                        background-color: #fff;
+                    }
                 }
                 &Icon{
                     padding-top: 14px;
                     padding-left: 17px;
                     margin-right: 18px;
                     position: relative;
+                    z-index: 1;
                     @include circle;
                     &:before{
                         top: 0;
                     }
                 }
                 &Location{
-                    color: #000;
+                    color: #fff;
                     font-size: 12px;
                     font-weight: 500;
                 }
                 &Body{
-                    margin-top: 12px;
-                    color: #000;
+                    margin-top: 10px;
+                    color: #fff;
                     font-size: 12px;
                     font-weight: 500;
                     line-height: normal;

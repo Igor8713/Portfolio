@@ -1,5 +1,6 @@
 .price{
     padding-top: 66px;
+    background-color: #212121;
     .line{
         margin-top: 31px;
     }
@@ -27,13 +28,13 @@
         }
     }
     &__cost{
-        color: #000;
+        color: #fff;
         font-size: 14px;
         font-weight: 700;
     }
     &__desc{
         margin-top: 5px;
-        color: #000;
+        color: #fff;
         font-size: 12px;
         font-weight: 500;
         line-height: normal;
