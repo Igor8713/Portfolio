@@ -340,7 +340,13 @@
     <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
-                <div class="contacts__photo"><img src="img/photo-space.png" alt="photo"></div>
+                <div class="contacts__photo">
+                    <!-- <img src="img/photo-space.png" alt="photo"> -->
+                    <picture>
+                        <source type="image/webp" srcset="img/photo-space.webp">
+                        <img src="img/photo-space.png" alt="photo">
+                    </picture>
+                </div>
                 <div class="contacts__desc">
                     <h2 class="title title_fs16 contacts__title">Контакты</h2>
                     <div class="title title_fs36 contacts__subtitle">Свяжитесь со мной</div>
