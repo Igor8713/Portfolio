@@ -100,10 +100,6 @@
         display: flex;
         align-items: center;
         margin-top: 28px;
-        position: relative;
-        input{
-            margin-left: 35px;
-        }
     }
     &__button{
         border: 0px solid #fff;
@@ -112,15 +108,21 @@
         font-weight: 700;
     }
     &__policy{
-        margin-left: 10px;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        a{
-            color: #00b3ff;
-            text-decoration: none;
-            &:hover{
+        display: flex;
+        align-items: center;
+        margin-left: 35px;
+        position: relative;
+        label{
+            margin-left: 10px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            a{
                 color: #00b3ff;
+                text-decoration: none;
+                &:hover{
+                    color: #00b3ff;
+                }
             }
         }
     }
@@ -134,7 +136,6 @@
         color: rgb(255, 94, 0) !important;
     }
     .policy__errorMessage{
-        top: 30px;
-        left: 245px
+        top: 15px;
     }
 }

@@ -98,7 +98,13 @@
     <section class="aboutMe" id="aboutMe">
         <div class="container">
             <div class="aboutMe__wrapper">
-                <div class="aboutMe__photo"><img src="img/photo-space.png" alt="photo"></div>
+                <div class="aboutMe__photo">
+                    <!-- <img src="img/photo-space.png" alt="photo"> -->
+                    <picture>
+                        <source type="image/webp" srcset="img/photo-space.webp">
+                        <img src="img/photo-space.png" alt="photo">
+                    </picture>
+                </div>
                 <div class="aboutMe__desc">
                     <h2 class="title title_fs16 aboutMe__title">Про меня</h2>
                     <div class="title title_fs36 aboutMe__subtitle">Меня зовут Игорь</div>
@@ -361,8 +367,10 @@
                         </div>
                         <div class="contacts__bottom">
                             <button class="button contacts__button">Отправить сообщение</button>
-                            <input type="checkbox" id="policy">
-                            <label for="policy" class="contacts__policy">Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
+                            <div class="contacts__policy">
+                                <input type="checkbox" id="policy">
+                                <label for="policy">Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
+                            </div>
                         </div>
                     </form>
                 </div>

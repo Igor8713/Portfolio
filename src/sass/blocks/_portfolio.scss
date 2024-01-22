@@ -3,9 +3,10 @@
     background-color: #212121;
     &__wrapper{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 280px);
         grid-auto-rows: 280px;
         gap: 5px;
+        justify-content: center;
         margin-top: 60px;
     }
     &__item{

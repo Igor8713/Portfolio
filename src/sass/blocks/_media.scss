@@ -1,4 +1,4 @@
-@media(max-width: 1350px){
+@media(max-width: 1350px), (max-height: 350px){
     .sidepanel{
         display: none;
     }
@@ -27,10 +27,38 @@
     }
     .skills{
         &__wrapper{
-            grid-template-columns: repeat(3, 270px);
+            grid-template-columns: repeat(auto-fit, 270px);
         }
         &__progress{
             grid-template-columns: repeat(2, 350px);
+        }
+    }
+    .portfolio{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+    }
+    .contacts{
+        &__wrapper{
+            padding: 0;
+        }
+        &__desc{
+            width: 510px;
+        }
+        &__name, &__email{
+            input{
+                width: 250px;
+            }
+        }
+        &__bottom{
+            justify-content: space-between;
+        }
+        &__policy{
+            width: 225px;
+            margin-left: 0;
+        }
+        .policy__errorMessage{
+            top: 35px; 
         }
     }
 }
@@ -63,11 +91,48 @@
         }
     }
     .skills{
-        &__wrapper{
-            grid-template-columns: repeat(2, 270px);
-        }
         &__progress{
             grid-template-columns: repeat(2, 300px);
+        }
+    }
+    .price{
+        &__wrapper{
+            padding: 0;
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+    .contacts{
+        &__photo{
+            width: 340px;
+        }
+        &__desc{
+            width: 340px;
+        }
+        &__form{
+            margin-top: 0;
+        }
+        &__inputs{
+            flex-direction: column;
+        }
+        &__name, &__email{
+            margin-top: 30px;
+            input{
+                width: 100%;
+            }
+        }
+        &__bottom{
+            flex-direction: column-reverse;
+            margin-top: 20px;
+        }
+        &__button{
+            margin-top: 20px;
+        }
+        &__policy{
+            justify-content: center;
+            width: 100%;
+        }
+        .policy__errorMessage{
+            top: 15px; 
         }
     }
 }
@@ -107,18 +172,69 @@
             align-items: center;
             .resume{
                 width: 425px;
+                margin-top: 40px;
             }
         }
     }
     .skills{
         padding-top: 46px;
         &__wrapper{
-            grid-template-columns: repeat(2, 260px);
+            grid-template-columns: repeat(auto-fit, 250px);
+            margin-top: 20px;
         }
         &__progress{
             grid-template-columns: 350px;
             gap: 48px normal;
             margin-top: 48px;
+        }
+    }
+    .portfolio{
+        padding-top: 47px;
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 250px);
+            margin-top: 40px;
+        }
+    }
+    .price{
+        padding-top: 46px;
+        &__wrapper{
+            grid-template-columns: 366px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+    .contacts{
+        padding-top: 46px;
+        padding-bottom: 50px;
+        &__photo{
+            display: none;
+        }
+        &__desc{
+            width: 100%;
+        }
+        &__form{
+            margin-top: 30px;
+        }
+        &__inputs{
+            flex-direction: row;
+        }
+        &__name, &__email{
+            margin-top: 0;
+            input{
+                width: 250px;
+            }
+        }
+        &__bottom{
+            flex-direction: row;
+        }
+        &__button{
+            margin-top: 0;
+        }
+        &__policy{
+            width: 225px;
+        }
+        .policy__errorMessage{
+            top: 35px; 
         }
     }
 }
@@ -145,7 +261,19 @@
     .line{
         margin: 15px auto 0 auto;
     }
+    .button{
+        &:hover{
+            box-shadow: none;
+            background-color: $main_color;
+        }
+    }
     .promo{
+        background: url(../img/promo_bg_mini.png) no-repeat 50%/cover;
+        &__link{
+            &:hover{
+                text-decoration: none;
+            }
+        }
         .hamburger{
             right: 20px;
         }
@@ -154,6 +282,18 @@
         &__block{
             width: 250px;
             padding-left: 20px;
+        }
+        &__link{
+            &:hover{
+                &:before{
+                    background-color: transparent;
+                }
+            }
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
     }
     .aboutMe{
@@ -181,7 +321,6 @@
             .resume{
                 width: 100%;
                 max-width: 300px;
-                margin-top: 40px;
                 &__item{
                     padding-top: 10px;
                     &:first-child{
@@ -193,12 +332,112 @@
     }
     .skills{
         &__wrapper{
-            grid-template-columns: minmax(auto, 270px);
-            gap: 20px normal;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            gap: 20px;
         }
         &__progress{
             grid-template-columns: minmax(auto, 300px);
+        }
+    }
+    .portfolio{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+            gap: 20px;
+        }
+        &__item{
+            &:hover{
+                transform: scale(1);
+            }
+        }
+    }
+    .price{
+        .line{
+            margin-top: 21px;
+        }
+        &__wrapper{
+            grid-template-columns: minmax(auto, 300px);
+            row-gap: 20px;
+            justify-content: center;
+        }
+    }
+    .contacts{
+        &__subtitle{
+            margin-top: 26px;
+        }
+        .line{
+            margin-top: 15px;
+        }
+        &__link{
+            &:hover{
+                color: #fff;
+            }
+        }
+        &__form{
+            margin-top: 0;
+        }
+        &__inputs{
+            flex-direction: column;
+        }
+        &__name, &__email{
+            margin-top: 30px;
+            input{
+                width: 100%;
+            }
+        }
+        &__bottom{
+            flex-direction: column-reverse;
+            margin-top: 20px;
+        }
+        &__button{
+            margin-top: 20px;
+        }
+        &__policy{
+            justify-content: center;
+            width: 100%;
+        }
+        .policy__errorMessage{
+            top: 15px; 
+        }
+    }
+}
+
+@media(max-width: 350px){
+    .contacts{
+        &__button{
+            margin-top: 40px;
+        }
+        &__policy{
+            width: 225px;
+        }
+        .policy__errorMessage{
+            top: 35px; 
+        }
+    }
+}
+
+@media(max-height: 525px){
+    .menu{
+        &__block{
+            padding-top: 75px;
+        }
+    }
+}
+
+@media(max-height: 475px){
+    .promo{
+        padding-top: 100px;
+    }
+    .menu{
+        &__social{
+            bottom: 25px;
+        }
+    }
+}
+
+@media(max-height: 435px){
+    .menu{
+        &__social{
+            display: none;
         }
     }
 }

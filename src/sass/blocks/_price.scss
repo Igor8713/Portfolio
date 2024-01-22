@@ -13,7 +13,6 @@
         margin-top: 60px;
     }
     &__item{
-        width: 366px;
         padding-left: 25px;
     }
     &__head{
@@ -28,6 +27,7 @@
         }
     }
     &__cost{
+        margin-left: 15px;
         color: #fff;
         font-size: 14px;
         font-weight: 700;

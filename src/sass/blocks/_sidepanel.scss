@@ -52,7 +52,8 @@ $sidepanel_left: 50px;
     align-items: center;
     width: $sidepanel_width;
     position: fixed;
-    top: calc($sidepanel_top + $sidepanel_width / 2 - 30px / 2);       /*top(220px(figma)) + width(320px(figma))/2 - height(30px(site))/2*/
+    top: 45%;
+    //top: calc($sidepanel_top + $sidepanel_width / 2 - 30px / 2);       /*top(220px(figma)) + width(320px(figma))/2 - height(30px(site))/2*/
     left: calc($sidepanel_left - $sidepanel_width / 2 + 30px / 2);      /*left(50px(figma)) - width(320px(figma))/2 + height(30px(site))/2*/
     z-index: 1;
     transform: rotate(-90deg);
