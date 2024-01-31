@@ -40,6 +40,7 @@
         &Title{
             padding-left: 14px;
             position: relative;
+            z-index: 1;
             @include circle;
             &:before{
                 top: -8px

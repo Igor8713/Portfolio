@@ -71,3 +71,38 @@ validator
         });
         return false;
     });
+
+/*---------------------------------fadeIn/fadeOut------------------------------*/
+function fadeIn(modal, time, disp){
+    modal.style.opacity = 0;
+    modal.style.display = disp || 'block';
+    modal.style.transition = `${time}ms opacity`;
+    setTimeout(() => {
+        modal.style.opacity = 1;
+    }, 10);
+}
+
+function fadeOut(modal, time){
+    modal.style.opacity = 1;
+    modal.style.transition = `${time}ms opacity`;
+    modal.style.opacity = 0;
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, time);
+}
+
+/*--------------------------------pageup----------------------------------------------*/
+window.addEventListener('scroll', function(){
+    if(this.scrollY > 1600){
+        if(document.querySelector('.pageup').style.display != 'block'){
+            fadeIn(document.querySelector('.pageup'), 400);
+        }
+    } else{
+        if(document.querySelector('.pageup').style.display != 'none'){
+            fadeOut(document.querySelector('.pageup'), 400);
+        }
+    }
+});
+
+/*-------------------------------------------animate--------------------------------------*/
+new WOW().init();
