@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
     <title>Мое портфолио</title>
-    <meta name="title" content="Мое портфолио" />
-    <meta name="description" content="Здесь вы можете узнать больше обо мне и ознакомиться с некоторыми моими работами" />
+    <meta name="title" content="Моє портфоліо" />
+    <meta name="description" content="Тут ви можете дізнатися більше про мене та ознайомитись з деякими моїми роботами" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="Мое портфолио" />
-    <meta property="og:description" content="Здесь вы можете узнать больше обо мне и ознакомиться с некоторыми моими работами" />
+    <meta property="og:title" content="Моє портфоліо" />
+    <meta property="og:description" content="Тут ви можете дізнатися більше про мене та ознайомитись з деякими моїми роботами" />
     <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="Мое портфолио" />
-    <meta property="twitter:description" content="Здесь вы можете узнать больше обо мне и ознакомиться с некоторыми моими работами" />
+    <meta property="twitter:title" content="Моє портфоліо" />
+    <meta property="twitter:description" content="Тут ви можете дізнатися більше про мене та ознайомитись з деякими моїми роботами" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/just_validate.min.js" defer></script>
     <script src="js/wow.min.js" defer></script>
+    <script src="js/lang.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -52,7 +53,7 @@
         <!-- sidepanel 1 -->
         <!-- <div class="sidepanel__text"><span>Социальные сети</span></div> -->
         <!-- sidepanel 2 -->
-        <div class="sidepanel__text">Социальные сети</div>
+        <div class="sidepanel__text sidepanel__text_lang">Социальные сети</div>
         <div class="sidepanel__divider"></div>
         <a href="https://github.com/Igor8713" class="sidepanel__link"><span class="icon-github"></span></a>
         <a href="https://t.me/igor0247" class="sidepanel__link"><span class="icon-telegram"></span></a>
@@ -66,12 +67,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#aboutMe">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#aboutMe" class="aboutMe_lang">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume" class="benefit_lang">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills" class="skills_lang">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio" class="portfolio_lang">ПОРТФОЛИО</a></li>
+                    <li class="menu__link"><a href="#price" class="price_lang">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts" class="contacts_lang">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -83,13 +84,18 @@
     </div>
     <section class="promo" id="promo">
         <div class="container">
-            <div class="title title_fs16 promo__subtitle">Меня зовут Игорь Литвиненко</div>
-            <h1 class="title title_fs48 promo__title">Я web-разработчик из города Кременчуг</h1>
+            <div class="title title_fs16 promo__subtitle promo__subtitle_lang">Меня зовут Игорь Литвиненко</div>
+            <h1 class="title title_fs48 promo__title promo__title_lang">Я web-разработчик из города Кременчуг</h1>
             <div class="promo__buttons">
-                <a href="#portfolio" class="promo__link button">Портфолио</a>
-                <a href="#aboutMe" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link button portfolio_lang">Портфолио</a>
+                <a href="#aboutMe" class="promo__link aboutMe_lang">Про меня</a>
             </div>
         </div>
+        <select class="changeLang">
+            <option value="en">en</option>
+            <option value="ru">ru</option>
+            <option value="ua">ua</option>
+        </select>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -107,31 +113,31 @@
                     </picture>
                 </div>
                 <div class="aboutMe__desc">
-                    <h2 class="title title_fs16 aboutMe__title">Про меня</h2>
-                    <div class="title title_fs36 aboutMe__subtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Меня зовут Игорь</div>
+                    <h2 class="title title_fs16 aboutMe__title aboutMe_lang">Про меня</h2>
+                    <div class="title title_fs36 aboutMe__subtitle aboutMe__subtitle_lang animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Меня зовут Игорь</div>
                     <div class="line"></div>
-                    <p class="aboutMe__text animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Всем привет. Меня зовут Литвиненко Игорь. Я верстальщик сайтов с нуля. Могу выполнить верстку сайта и ее адаптацию под различные устройства. Также я знаю основы програмирования для простых и средних анимаций и функционала для сайта.</p>
+                    <p class="aboutMe__text aboutMe__text_lang animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Всем привет. Меня зовут Литвиненко Игорь. Я верстальщик сайтов с нуля. Могу выполнить верстку сайта и ее адаптацию под различные устройства. Также я знаю основы програмирования для простых и средних анимаций и функционала для сайта.</p>
                 </div>
                 <div class="aboutMe__skills">
                     <div class="aboutMe__skillsItem animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                         <div class="aboutMe__skillsIcon"><img src="icons/aboutMe/webDev.svg" alt="webdev"></div>
                         <div>
-                            <div class="title">Web-разработка</div>
-                            <div class="aboutMe__skillsText">Помимо верстки на чистом HTML, CSS и JS по обстоятельствам я использую Bootstrap, JQuery, некоторые JS-плагины, и другие технологии.</div>
+                            <div class="title aboutMe__skillsTitle_lang">Web-разработка</div>
+                            <div class="aboutMe__skillsText aboutMe__skillsText_lang">Помимо верстки на чистом HTML, CSS и JS по обстоятельствам я использую Bootstrap, JQuery, некоторые JS-плагины, и другие технологии.</div>
                         </div>
                     </div>
                     <div class="aboutMe__skillsItem animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                         <div class="aboutMe__skillsIcon"><img src="icons/aboutMe/mobileDev.svg" alt="webdev"></div>
                         <div>
-                            <div class="title">Адаптация</div>
-                            <div class="aboutMe__skillsText">Cайты получаются адаптивными на любом устройстве таком как компьютер, планшет и телефон.</div>
+                            <div class="title aboutMe__skillsTitle_lang">Адаптация</div>
+                            <div class="aboutMe__skillsText aboutMe__skillsText_lang">Cайты получаются адаптивными на любом устройстве таком как компьютер, планшет и телефон.</div>
                         </div>
                     </div>
                     <div class="aboutMe__skillsItem animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                         <div class="aboutMe__skillsIcon"><img src="icons/aboutMe/Design.svg" alt="webdev"></div>
                         <div>
-                            <div class="title">Макеты</div>
-                            <div class="aboutMe__skillsText">Я верстаю сайты с макетов которые созданы в таких сервисах как Figma, Zeplin, и т.п. А для редактирования изображений я пользуюсь Adobe Photoshop.</div>
+                            <div class="title aboutMe__skillsTitle_lang">Макеты</div>
+                            <div class="aboutMe__skillsText aboutMe__skillsText_lang">Я верстаю сайты с макетов которые созданы в таких сервисах как Figma, Zeplin, и т.п. А для редактирования изображений я пользуюсь Adobe Photoshop.</div>
                         </div>
                     </div>
                 </div>
@@ -140,32 +146,32 @@
     </section>
     <section class="benefit" id="resume">
         <div class="container">
-            <h2 class="title title_fs16 title__sectionTitle">Опыт</h2>
-            <div class="title title_fs36 title__sectionSubtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Чем я буду полезен</div>
+            <h2 class="title title_fs16 title__sectionTitle benefit_lang">Мой опыт</h2>
+            <div class="title title_fs36 title__sectionSubtitle benefit__subtitle_lang animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Чем я буду полезен</div>
             <div class="line"></div>
             <div class="benefit__wrapper">
                 <div class="resume">
-                    <h3 class="title title_fs20 resume__title">Образование</h3>
+                    <h3 class="title title_fs20 resume__title education_lang">Образование</h3>
                     <ul>
                         <li class="resume__item">
                             <div class="resume__itemHead">
                                 <div class="resume__itemIcon"><img src="icons/benefit/University.svg" alt="icon"></div>
                                 <div>
-                                    <div class="title animate__animated animate__bounceIn wow" data-wow-delay="0.5s">КрНУ им. М. Остроградского</div>
-                                    <div class="resume__itemLocation animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Диплом магистра | Кременчуг (2014-2019)</div>
+                                    <div class="title educationTitle_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">КрНУ им. М. Остроградского</div>
+                                    <div class="resume__itemLocation educationLoc_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Диплом магистра | Кременчуг (2014-2019)</div>
                                 </div>
                             </div>
-                            <div class="resume__itemBody animate__animated animate__bounceIn wow" data-wow-delay="0.5s">В университете я учился по специальности Компьютерные науки. На этой специальности, помимо всего прочего, я изучал основы верстки сайтов на HTML, CSS и JS.</div>
+                            <div class="resume__itemBody educationBody_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">В университете я учился по специальности Компьютерные науки. На этой специальности, помимо всего прочего, я изучал основы верстки сайтов на HTML, CSS и JS.</div>
                         </li>
                         <li class="resume__item">
                             <div class="resume__itemHead">
                                 <div class="resume__itemIcon"><img src="icons/benefit/Courses.svg" alt="icon"></div>
                                 <div>
-                                    <div class="title animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Udemy</div>
-                                    <div class="resume__itemLocation animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Курсы по Web-разработке</div>
+                                    <div class="title educationTitle_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Udemy</div>
+                                    <div class="resume__itemLocation educationLoc_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Курсы по Web-разработке</div>
                                 </div>
                             </div>
-                            <div class="resume__itemBody animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Udemy - это платформа для онлайн-обучения по которому я проходил курсы на Web-разработчика, на которых я освоил все, что нужно для создания web-сайтов.</div>
+                            <div class="resume__itemBody educationBody_lang animate__animated animate__bounceIn wow" data-wow-delay="0.5s">Udemy - это платформа для онлайн-обучения по которому я проходил курсы на Web-разработчика, на которых я освоил все, что нужно для создания web-сайтов.</div>
                         </li>
                     </ul>
                 </div>
@@ -199,8 +205,8 @@
     </section>
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="title title_fs16 title__sectionTitle">Навыки</h2>
-            <div class="title title_fs36 title__sectionSubtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Что я использую в работе</div>
+            <h2 class="title title_fs16 title__sectionTitle skills_lang">Мои навыки</h2>
+            <div class="title title_fs36 title__sectionSubtitle skills__subtitle_lang animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Что я использую в работе</div>
             <div class="line"></div>
             <div class="skills__wrapper">
                 <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
@@ -208,49 +214,41 @@
                         <img src="icons/skills/html5.svg" alt="skills_icon">
                     </div>
                     <div class="title">HTML5</div>
-                    <div class="skills__desc">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                    <div class="skills__desc skills__desc_lang">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
                 <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                     <div class="skills__icon">
                         <img src="icons/skills/css3.svg" alt="skills_icon">
                     </div>
                     <div class="title">CSS3</div>
-                    <div class="skills__desc">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                    <div class="skills__desc skills__desc_lang">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                     <div class="skills__icon">
                         <img src="icons/skills/Sass2.svg" alt="skills_icon">
                     </div>
                     <div class="title">SASS/SCSS</div>
-                    <div class="skills__desc">Для упрощения CSS-кода я использую этот язык, который помимо более быстрого написания стилей имеет ряд полезных функций, которых нет в CSS.</div>
+                    <div class="skills__desc skills__desc_lang">Для упрощения CSS-кода я использую этот язык, который помимо более быстрого написания стилей имеет ряд полезных функций, которых нет в CSS.</div>
                 </div>
                 <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                     <div class="skills__icon">
                         <img src="icons/skills/JS.svg" alt="skills_icon">
                     </div>
                     <div class="title">Java Script</div>
-                    <div class="skills__desc">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                    <div class="skills__desc skills__desc_lang">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
                 <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
                     <div class="skills__icon">
                         <img src="icons/skills/Jquery.svg" alt="skills_icon">
                     </div>
                     <div class="title">Jquery</div>
-                    <div class="skills__desc">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
-                </div>
-                <div class="skills__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s">
-                    <div class="skills__icon">
-                        <img src="icons/skills/Figma.svg" alt="skills_icon">
-                        <img src="icons/skills/zeplin.svg" alt="skills_icon">
-                    </div>
-                    <div class="title">Figma/Zeplin</div>
-                    <div class="skills__desc">Это инструменты на которых веб-дизайнеры создают макеты сайтов. Из этих макетов я верстаю сайты</div>
+                    <div class="skills__desc skills__desc_lang">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                 </div>
             </div>
             <div class="skills__progress">
                 <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">HTML</div>
+                        <div class="title skills__progressTitle skills__progressTitle_lang">HTML</div>
                         <div class="skills__progressPerc">95%</div>
                     </div>
                     <div class="skills__progressBar">
@@ -259,7 +257,7 @@
                 </div>
                 <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">CSS3|SCSS|SASS</div>
+                        <div class="title skills__progressTitle skills__progressTitle_lang">CSS3|SCSS|SASS</div>
                         <div class="skills__progressPerc">90%</div>
                     </div>
                     <div class="skills__progressBar">
@@ -268,7 +266,7 @@
                 </div>
                 <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">JavaScript|JQuery</div>
+                        <div class="title skills__progressTitle skills__progressTitle_lang">JavaScript|JQuery</div>
                         <div class="skills__progressPerc">65%</div>
                     </div>
                     <div class="skills__progressBar">
@@ -277,16 +275,7 @@
                 </div>
                 <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">Photoshop|Figma|Zeplin</div>
-                        <div class="skills__progressPerc">75%</div>
-                    </div>
-                    <div class="skills__progressBar">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
-                    <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">Верстка сайтов</div>
+                        <div class="title skills__progressTitle skills__progressTitle_lang">Верстка сайтов</div>
                         <div class="skills__progressPerc">85%</div>
                     </div>
                     <div class="skills__progressBar">
@@ -295,7 +284,7 @@
                 </div>
                 <div class="skills__progressItem animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="skills__progressHead">
-                        <div class="title skills__progressTitle">Креативность</div>
+                        <div class="title skills__progressTitle skills__progressTitle_lang">Креативность</div>
                         <div class="skills__progressPerc">60%</div>
                     </div>
                     <div class="skills__progressBar">
@@ -307,8 +296,8 @@
     </section>
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="title title_fs16 title__sectionTitle">Портфолио</h2>
-            <div class="title title_fs36 title__sectionSubtitle animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Мои работы</div>
+            <h2 class="title title_fs16 title__sectionTitle portfolio_lang">Портфолио</h2>
+            <div class="title title_fs36 title__sectionSubtitle portfolio__subtitle_lang animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">Мои работы</div>
             <div class="line"></div>
             <div class="portfolio__wrapper">
                 <a href="https://igor8713.github.io/Uber/" class="portfolio__item animate__animated animate__bounceIn wow" data-wow-delay="0.5s"><img src="img/uber.jpg" alt="foto_site"></a>
@@ -318,22 +307,22 @@
     </section>
     <section class="price" id="price">
         <div class="container">
-            <h2 class="title title_fs16 title__sectionTitle">Прайс-лист</h2>
+            <h2 class="title title_fs16 title__sectionTitle price_lang">Прайс-лист</h2>
             <div class="line"></div>
             <div class="price__wrapper">
                 <div class="price__item animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="price__head">
-                        <div class="title price__title">Landing-page</div>
-                        <div class="price__cost">от 1500 грн.</div>
+                        <div class="title price__title price__title_lang">Landing-page</div>
+                        <div class="price__cost price__cost_lang">от 1500 грн.</div>
                     </div>
-                    <div class="price__desc">Верстка одностраничного сайта для презентации услуг, товаров и т. д.</div>
+                    <div class="price__desc price__desc_lang">Верстка одностраничного сайта для презентации услуг, товаров и т. д.</div>
                 </div>
                 <div class="price__item animate__animated animate__fadeInUp wow" data-wow-delay="0.5s">
                     <div class="price__head">
-                        <div class="title price__title">Корпоративный сайт</div>
-                        <div class="price__cost">от 3000 грн.</div>
+                        <div class="title price__title price__title_lang">Корпоративный сайт</div>
+                        <div class="price__cost price__cost_lang">от 3000 грн.</div>
                     </div>
-                    <div class="price__desc">Верстка многостраничного сайта для вашего бизнеса, компании и т. д.</div>
+                    <div class="price__desc price__desc_lang">Верстка многостраничного сайта для вашего бизнеса, компании и т. д.</div>
                 </div>
             </div>
         </div>
@@ -349,34 +338,34 @@
                     </picture>
                 </div>
                 <div class="contacts__desc">
-                    <h2 class="title title_fs16 contacts__title">Контакты</h2>
-                    <div class="title title_fs36 contacts__subtitle">Свяжитесь со мной</div>
+                    <h2 class="title title_fs16 contacts__title contacts_lang">Контакты</h2>
+                    <div class="title title_fs36 contacts__subtitle contacts__subtitle_lang">Свяжитесь со мной</div>
                     <div class="line"></div>
-                    <div class="title contacts__text">По ссылке ниже:</div>
+                    <div class="title contacts__text contacts__text_up_lang">По ссылке ниже:</div>
                     <div class="contacts__links">
                         <a href="https://t.me/igor0247" class="contacts__link"><span class="icon-telegram"></span></a>
                     </div>
-                    <div class="title contacts__text">Или оставьте ваши данные и я вам напишу:</div>
+                    <div class="title contacts__text contacts__text_down_lang">Или оставьте ваши данные и я вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__inputs">
                             <div class="contacts__name">
                                 <input type="text" id="name" name="name" class="inputField">
-                                <label for="name">Ваше имя</label>
+                                <label for="name" class="form__name_lang">Ваше имя</label>
                             </div>
                             <div class="contacts__email">
                                 <input type="email" id="email" name="email" class="inputField">
-                                <label for="email">Ваша почта</label>
+                                <label for="email" class="form__email_lang">Ваша почта</label>
                             </div>
                         </div>
                         <div class="contacts__message">
                             <textarea name="message" id="message" class="inputField"></textarea>
-                            <label for="message">Ваше сообщение</label>
+                            <label for="message" class="form__message_lang">Ваше сообщение</label>
                         </div>
                         <div class="contacts__bottom">
-                            <button class="button contacts__button">Отправить сообщение</button>
+                            <button class="button contacts__button contacts__button_lang">Отправить сообщение</button>
                             <div class="contacts__policy">
                                 <input type="checkbox" id="policy">
-                                <label for="policy">Я согласен(а) с <a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
+                                <label for="policy" class="form__policy_lang">Я согласен(а) с <a href="policy_ru.html" target="_blank">политикой конфиденциальности</a></label>
                             </div>
                         </div>
                     </form>
