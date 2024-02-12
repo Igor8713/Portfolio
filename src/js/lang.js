@@ -166,7 +166,7 @@ const langAboutMeSkills = {
 const langResume = {
     0 : {
         "educationTitle" : {
-            "en": "KrNU",
+            "en": "KrNU M. Ostrohradskyi",
             "ru": "КрНУ им. М. Остроградского",
             "ua": "КрНУ ім. М. Остроградського",
         },
@@ -176,7 +176,7 @@ const langResume = {
             "ua": "Диплом магістра | Кременчук (2014-2019)",
         },
         "educationBody" : {
-            "en": "At the university I studied Computer Science. In this specialty, among other things, I studied the basics of website layout using HTML, CSS and JS.",
+            "en": "At the university I studied Computer Sciens. In this specialty, among other things, I studied the basics of website layout using HTML, CSS and JS.",
             "ru": "В университете я учился по специальности Компьютерные науки. На этой специальности, помимо всего прочего, я изучал основы верстки сайтов на HTML, CSS и JS.",
             "ua": "В університеті я навчався за спеціальністю «Комп'ютерні науки». На цій спеціальності, окрім іншого, я вивчав основи верстки сайтів на HTML, CSS та JS.",
         },
