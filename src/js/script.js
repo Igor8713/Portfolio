@@ -7,11 +7,11 @@ const skills__item = document.querySelectorAll('.skills__item');
 const skills__progress_item = document.querySelectorAll('.skills__progressItem');
 const price__item = document.querySelectorAll('.price__item');
 
-let name_required = "Пожалуйста введите свое имя", 
+/* let name_required = "Пожалуйста введите свое имя", 
     name_length = "Введите 2 символов", 
     email_required = "Пожалуйста, введите свою почту", 
     email_email = "Неправильно введен адрес почты", 
-    policy_required = "Пожалуйста, подтвердите свое согласие";
+    policy_required = "Пожалуйста, подтвердите свое согласие"; */
 
 select.addEventListener('change', changeURLLang);
 
@@ -102,11 +102,11 @@ function changeLang(){
         }
     }
 
-    name_required = langError['name_required'][hash];
+    /* name_required = langError['name_required'][hash];
     name_length = langError['name_length'][hash];
     email_required = langError['email_required'][hash];
     email_email = langError['email_email'][hash];
-    policy_required = langError['policy_required'][hash];
+    policy_required = langError['policy_required'][hash]; */
 }
 
 changeLang();
@@ -129,7 +129,7 @@ percs.forEach((item, i) =>{
 });
 
 /*------------------------------------contacts_validate-------------------------------------*/
-const inputs = document.querySelectorAll('.inputField');
+/* const inputs = document.querySelectorAll('.inputField');
 const validator = new JustValidate(document.querySelector('.contacts__form'));
 
 validator
@@ -183,7 +183,7 @@ validator
             document.querySelector('.contacts__bottom input').checked = false;
         });
         return false;
-    });
+    }); */
 
 /*---------------------------------fadeIn/fadeOut------------------------------*/
 function fadeIn(modal, time, disp){
